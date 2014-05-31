@@ -53,13 +53,16 @@ exports.numberFromGiftCode = function(giftCode) {
 
 // Will call |cb| with a single parameter, the gift code generated for the URL.
 exports.addUrl = function(url, cb) {
-    addUrlForNumber(url, function(number) {
-	cb(giftCodeFromNumber(number));
+    exports.addUrlForNumber(url, function(number) {
+	cb(exports.giftCodeFromNumber(number));
     });
 };
 
 // Will call |cb| with a single parameter, the URL stored for the
 // given gift code, or the empty string if no such URL is found.
 exports.getUrl = function(giftCode, cb) {
-    getUrlForNumber(numberFromGiftCode(giftCode), cb);
+    console.log("Gift code " + giftCode);
+    var number = exports.numberFromGiftCode(giftCode);
+    console.log("Number from code " + number);
+    exports.getUrlForNumber(number, cb);
 };

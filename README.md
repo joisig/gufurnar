@@ -16,3 +16,4 @@ newer.
 % cd OpenJSCAD.org
 % make install
 ```
+a folder that is a subfolder 

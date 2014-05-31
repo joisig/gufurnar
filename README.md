@@ -19,6 +19,7 @@ newer.
 % cd OpenJSCAD.org
 % make install
 % npm install nedb --save
+% sudo npm install nodeunit -g
 ```
 
 ## Architecture

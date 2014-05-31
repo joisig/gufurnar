@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 var vm = require('vm');
 var url = require('url');
+var gufudb = require('gufudb');
 
 global.lib = '/usr/local/lib/openjscad/';             // for now hard-coded
 global.nodeModules = '/usr/local/lib/node_modules/';  // for now hard-coded too

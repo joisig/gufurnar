@@ -18,6 +18,7 @@ newer.
 % git clone https://github.com/Spiritdude/OpenJSCAD.org
 % cd OpenJSCAD.org
 % make install
+% cd ..
 % npm install nedb --save
 % sudo npm install nodeunit -g
 ```

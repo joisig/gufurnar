@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	p Here you can transform your boring digital giftcard into a beautiful 3D object.
+
+	div.cardInput
+	form(name="cardGenerate", action="/generate", method="post")
+		div.input-row
+			label(for='code',class='label') Code
+			input(type="text", name="code")
+
+		div.input-row
+			label(for='model',class='label') Model
+			select(name='model')
+				option(selected=true, value='steam') steam
+				option(selected=false, value='anythingelse') anythingelse
+		
+		div.input-row
+			input(type="submit", value="Generate")

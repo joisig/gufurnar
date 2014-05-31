@@ -9,8 +9,10 @@ Note: These instructions have only been verified on a Mac (please
 update if/when verified on other OSes).
 
 1. Clone our repository into some folder.
-2. Go to http://nodejs.org/download/ and install Node.js version 0.8.1 or
+2. Install Node.js version 0.8.1 or newer.
+   * Mac: Go to http://nodejs.org/download/ and install Node.js version 0.8.1 or
 newer.
+   * Linux: sudo apt-get install nodejs npm
 3. In the folder enclosing our repository (one level up), run the
    following commands:
 
@@ -21,7 +23,11 @@ newer.
 % cd ..
 % sudo npm install nedb --save
 % sudo npm install nodeunit -g
+% cd gufurnar
+% node server.js
 ```
+
+Our server should now be running at http://localhost:8000
 
 ## Architecture
 

@@ -19,7 +19,7 @@ newer.
 % cd OpenJSCAD.org
 % make install
 % cd ..
-% npm install nedb --save
+% sudo npm install nedb --save
 % sudo npm install nodeunit -g
 ```
 

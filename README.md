@@ -5,8 +5,8 @@ gufurnar
 
 ## Getting Started
 
-Note: These instructions have only been verified on a Mac (please
-update if/when verified on other OSes).
+Note: These instructions have only been verified on a Mac and on an Ubuntu 14.04 LTS server. Please
+update if/when verified on other OSes.
 
 1. Clone our repository into some folder.
 2. Install Node.js version 0.8.1 or newer.
@@ -24,7 +24,8 @@ newer.
 % sudo npm install nedb --save
 % sudo npm install nodeunit -g
 % cd gufurnar
-% node server.js
+% node server.js     # on Mac
+% nodejs server.js   # on Linux
 ```
 
 Our server should now be running at http://localhost:8000

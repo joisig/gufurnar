@@ -1,7 +1,7 @@
 
 function main() {
 
-    var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([35,60,6]);
+	var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([35,60,6]);
 	bigEndBearing = difference(bigEndBearing, cylinder({r: 20, h: 12, center: true}).translate([35,60,13]));
 	bigEndBearing = union(bigEndBearing, cylinder({r: 15, h: 12, center: true}).translate([35, 60,6]));
 

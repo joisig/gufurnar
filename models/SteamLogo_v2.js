@@ -1,16 +1,23 @@
-
 function main() {
+	var code_pl = vector_text(0, 0, "HAXET");
+	var code = [];
+	code_pl.forEach(function (pl) {
+		character = rectangular_extrude(pl, {w: 2, h: 5});
+		code.push(character);
+	});
+	code = scale(0.8, code);
+	code = translate([-13, 42, 14], code);
 
-    var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([70,0,6]);
+	var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([70,0,6]);
 	bigEndBearing = difference(bigEndBearing, cylinder({r: 21, h: 12, center: true}).translate([70,0,6]));
 
 	var endBearing = difference(
-		cylinder({r: 20, h: 16, center: true}).translate([-120,0,8]),
-		cylinder({r: 15, h: 4, center: true}).translate([-120,0,14])
+	cylinder({r: 20, h: 16, center: true}).translate([-120,0,8]),
+	cylinder({r: 15, h: 4, center: true}).translate([-120,0,14])
 	);
 	var middleBearing = difference(
-		cylinder({r: 20, h: 12, center: true}).translate([0,0,6]),
-		cylinder({r: 15, h: 12, center: true}).translate([0,0,6])
+	cylinder({r: 20, h: 12, center: true}).translate([0,0,6]),
+	cylinder({r: 15, h: 12, center: true}).translate([0,0,6])
 	);
 
 	var longShaft = hull( circle({r:12, center:true}),circle({r:12, center:true}).translate([-120,0,0]) );
@@ -29,8 +36,9 @@ function main() {
 	shortShaft = union(shortShaft, middleBearing);
 	shortShaft = shortShaft.translate([-25,0,0]);
 
+
 	return union(
-		longShaft,
-		shortShaft
+	longShaft.subtract(code),
+	shortShaft
 	);
 }

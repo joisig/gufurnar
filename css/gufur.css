@@ -1,13 +1,20 @@
 body
 {
-	margin: 150px; 
-/*	background: #e5f04c url(../img/All_the_things-transp-bkgr.png) 0 0 repeat fixed;*/
+	margin: 90px; 
+	background: #fff url(../img/springtime.jpg) bottom repeat fixed;
 	
 }
+/*The lovely Sprintime wallpaper is borrowed from http://www.gillesandcecilie.com/new-print-springtime/ */
 
 article
 {
-	margin: 40px 0;
+	margin: 0;	
+	padding: 40px;
+	background-color: #fff;
+
+background: -webkit-linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+background: -moz-linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
 }
 
 h1
@@ -18,13 +25,18 @@ h1
 .dl
 {
 	margin: 40px 0 0 0;
+	padding: 20px;
 	font-size: 40px;
+	background: -webkit-linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+	background: -moz-linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+	background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
 }
 
 .reference
 {
-	margin-top: 100px;
-	font-size: 0.8em;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	font-size: 0.9em;
 }
  input
  {
@@ -32,3 +44,119 @@ h1
  	width: 400px;
 
  }
+
+
+.btn
+{
+	margin: 40px 0 0 0;
+	padding: 25px 0 20px 0;
+	font-size: 40px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	/*border:1px solid #337fed;*/
+	display: inline-block;
+	color: #ffffff;
+	font-family: Helvetica;
+	letter-spacing: 0.05em;
+	font-size: 25px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height: 0px;
+	width: 200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+}
+
+.btn:hover, button:hover 
+{
+	background-color:#1e62d0;
+}
+
+.btn:active, button:hover 
+{
+	position:relative;
+	top:1px;
+}
+
+.btn:hover, button:hover
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee');
+	background-color:#468ccf;
+}
+
+.btn:active, button:hover
+{
+	position:relative;
+	top:1px;
+}
+
+
+button
+{
+
+	padding: 25px;
+	font-size: 40px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	/*border:1px solid #337fed;*/
+	display: inline-block;
+	color: #ffffff;
+	font-family: Helvetica;
+	letter-spacing: 0.05em;
+	font-size: 25px;
+	font-weight:bold;
+	font-style:normal;
+	line-height: 0px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+}
+
+
+/* This button was generated using CSSButtonGenerator.com */
+
+a {
+	color: #fff
+}
+a:hover
+{
+	color: #fff;
+}
+
+p {
+	font-size: 1.5em;
+}

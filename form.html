@@ -21,18 +21,26 @@
 <body>
 
 <article>
-<h2>Create a beautiful model for your gift card URL:</h2>
-
+<h1>Create a beautiful gift card model</h1>
+<p>Enter your giftcard URL:</p>
 <form action="/makecode" method="get">
-<input type="text" name="url">
+<input type="text" name="url"> <br />
+<button>
+<a href="/makemodel?code=42AQLUE">Create gift card!</a>
+</button>
+
 </form>
 </article>
 
 
 <article>
-<h2>Claim your gift card by entering the code:</h2>
+<h1>Claim your gift card by entering the code:</h1>
 <form action="javascript:window.location.href = '/' + document.getElementById('codeinput').value;">
 <input type=text name=code id="codeinput">
+<br>
+<button>
+<a href="/makemodel?code=42AQLUE">Claim your gift!</a>
+</button>
 </form>
 </article>
 

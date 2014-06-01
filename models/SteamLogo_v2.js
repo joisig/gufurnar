@@ -1,10 +1,10 @@
 
 function main() {
 
-    var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([75,0,6]);
-    bigEndBearing = difference(bigEndBearing, cylinder({r: 20, h: 12, center: true}).translate([75,0,6]));
+    var bigEndBearing = cylinder({r: 27, h: 12, center: true}).translate([70,0,6]);
+	bigEndBearing = difference(bigEndBearing, cylinder({r: 21, h: 12, center: true}).translate([70,0,6]));
 
-    var endBearing = difference(
+	var endBearing = difference(
 		cylinder({r: 20, h: 16, center: true}).translate([-120,0,8]),
 		cylinder({r: 15, h: 4, center: true}).translate([-120,0,14])
 	);
@@ -21,10 +21,10 @@ function main() {
 	longShaft = union(longShaft, endBearing);
 	longShaft = longShaft.translate([80,50,0]);
 
-	var shortShaft = hull( circle({r:16, center:true}),circle({r:22, center:true}).translate([75,0,0]) );
+	var shortShaft = hull( circle({r:16, center:true}),circle({r:22, center:true}).translate([70,0,0]) );
 	shortShaft = linear_extrude({ height: 12 }, shortShaft);
 	shortShaft = difference(shortShaft, cylinder({r: 20, h: 16, center: true}).translate([0,0,8]));
-	shortShaft = difference(shortShaft, cylinder({r: 20, h: 12, center: true}).translate([75,0,6]));
+	shortShaft = difference(shortShaft, cylinder({r: 21, h: 12, center: true}).translate([70,0,6]));
 	shortShaft = union(shortShaft, bigEndBearing);
 	shortShaft = union(shortShaft, middleBearing);
 	shortShaft = shortShaft.translate([-25,0,0]);

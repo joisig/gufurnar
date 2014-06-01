@@ -1,21 +1,31 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
-	p Here you can transform your boring digital giftcard into a beautiful 3D object.
 
-	div.cardInput
-	form(name="cardGenerate", action="/generate", method="post")
-		div.input-row
-			label(for='code',class='label') Code
-			input(type="text", name="code")
+	div.jumbotron
+		div.container
+			h1= title
+			p Welcome to #{title}
+			p Here you can transform your boring digital giftcard into a beautiful 3D object.
 
-		div.input-row
-			label(for='model',class='label') Model
-			select(name='model')
-				option(selected=true, value='steam') steam
-				option(selected=false, value='anythingelse') anythingelse
-		
-		div.input-row
-			input(type="submit", value="Generate")
+	div.container
+		div.col-lg-6
+			form(name="cardGenerate", action="/generate", method="post", class='form-signin', role="form")
+				h2(class='form-signin-heading') Generate Gift
+				label(for='code',class='.sr-only') Code
+				input(type="text", name="code", class='form-control')
+
+				label(for='model',class='.sr-only') Model
+				select(name='model', class='form-control')
+					option(selected=true, value='steam') steam
+					option(selected=false, value='anythingelse') anythingelse
+				p
+				input(type="submit", value="Generate", class='btn btn-lg btn-primary btn-block')
+
+		div.col-lg-6
+			form(name="cardGenerate", action="/generate", method="post", class='form-signin', role="form")
+			h2(class='form-signin-heading') Redeem Gift
+			label(for='code',class='.sr-only') Code
+			input(type="text", name="code", class='form-control')
+			p
+			input(type="submit", value="Redeem", class='btn btn-lg btn-primary btn-block')

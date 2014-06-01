@@ -25,6 +25,7 @@ app.use(app.router);
 
 //get
 app.get('/', routes.index);
+app.get('/about', routes.about);
 app.get('/users', users.list);
 
 //post

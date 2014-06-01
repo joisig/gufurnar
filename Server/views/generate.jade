@@ -1,9 +1,10 @@
 extends layout
 
 block content
-	h1= title
-	h2 Code: #{code}
-	h2 Model: #{model}
-	p Your item is ready.
-	input(type='Button', name='download', value='Download')
+
+	div.jumbotron
+		h1 Your item is ready
+		p Download the file, print it and give it to someone you like.
+		p
+			a(class='btn btn-lg btn-primary', href='#') Download
 

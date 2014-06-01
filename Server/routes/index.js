@@ -9,3 +9,10 @@ exports.gen = function(req, res){
   							model: req.body.model
   						});
 };
+
+exports.about = function(req, res){
+  res.render('about', { title: 'About', 
+  							code: req.body.code,
+  							model: req.body.model
+  						});
+};
